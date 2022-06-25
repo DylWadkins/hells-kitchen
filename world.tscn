@@ -1,9 +1,31 @@
-[gd_scene load_steps=2 format=2]
+[gd_scene load_steps=5 format=2]
 
 [ext_resource path="res://Chef.tscn" type="PackedScene" id=1]
+[ext_resource path="res://Player.tscn" type="PackedScene" id=2]
+[ext_resource path="res://gordon-icon.png" type="Texture" id=3]
+
+[sub_resource type="RectangleShape2D" id=1]
+extents = Vector2( 451.249, 452.432 )
 
 [node name="Node2D" type="Node2D"]
 
 [node name="Chef" parent="." instance=ExtResource( 1 )]
+position = Vector2( 35, 39 )
 speed = 34
 target_position = 120
+
+[node name="Player" parent="." instance=ExtResource( 2 )]
+position = Vector2( 112, 34 )
+
+[node name="testfloor" type="StaticBody2D" parent="."]
+collision_layer = 2
+
+[node name="Sprite" type="Sprite" parent="testfloor"]
+position = Vector2( 124, 142 )
+scale = Vector2( 0.333519, 0.102778 )
+texture = ExtResource( 3 )
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="testfloor"]
+position = Vector2( 124.5, 141.5 )
+scale = Vector2( 0.333519, 0.102778 )
+shape = SubResource( 1 )
