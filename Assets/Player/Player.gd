@@ -1,6 +1,6 @@
 extends KinematicBody2D
-# Finite State Machine for organizing code whether player is on the floor vs air
-enum States {AIR =1, FLOOR}
+# Finite State Machine for organizing code whether player is on the floor vs air vs hiding
+enum States {AIR =1, FLOOR, HIDE}
 
 # Variables
 
