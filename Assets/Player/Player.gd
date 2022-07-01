@@ -15,6 +15,7 @@ const GRAVITY = 30
 const JUMPFORCE = -750
 
 # code that is run every 60 fps, maybe... correct this is im wrong lol
+# code that is run every frame
 func _physics_process(delta):
 # switch statement for the two states
 	match state:
