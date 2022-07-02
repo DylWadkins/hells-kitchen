@@ -8,6 +8,8 @@ extents = Vector2( 11.5, 30.5 )
 
 [node name="Chef" type="KinematicBody2D"]
 position = Vector2( 100, 100 )
+collision_layer = 4
+collision_mask = 0
 script = ExtResource( 2 )
 
 [node name="Sprite" type="Sprite" parent="."]

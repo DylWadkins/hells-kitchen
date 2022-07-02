@@ -1,0 +1,15 @@
+[remap]
+
+importer="ogg_vorbis"
+type="AudioStreamOGGVorbis"
+path="res://.import/Crunch.ogg-abdde8dc6f11c4b5d8ce2e04a9854c2b.oggstr"
+
+[deps]
+
+source_file="res://Assets/Sounds/Crunch.ogg"
+dest_files=[ "res://.import/Crunch.ogg-abdde8dc6f11c4b5d8ce2e04a9854c2b.oggstr" ]
+
+[params]
+
+loop=false
+loop_offset=0

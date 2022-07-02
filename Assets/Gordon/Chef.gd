@@ -3,10 +3,11 @@ extends KinematicBody2D
 var velocity = Vector2(0, 0)
 
 export var speed = 32
-export var gravity = 0
+export var gravity = 30
 # May want to use position 2Ds in the future
 # This garbage code is just for testing
 export var target_position = 50 
+var player = null
 
 func _ready():
 	pass
@@ -27,3 +28,6 @@ func move_character():
 	velocity.y = gravity
 
 	velocity = move_and_slide(velocity, Vector2.UP)
+
+
+
