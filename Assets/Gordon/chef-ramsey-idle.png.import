@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/chef-ramsey.png-eb3b144633ea88172bac762be0fa2a0c.stex"
+path="res://.import/chef-ramsey-idle.png-243885feca03607ccb8bc20d289b178e.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://chef-ramsey.png"
-dest_files=[ "res://.import/chef-ramsey.png-eb3b144633ea88172bac762be0fa2a0c.stex" ]
+source_file="res://Assets/Gordon/chef-ramsey-idle.png"
+dest_files=[ "res://.import/chef-ramsey-idle.png-243885feca03607ccb8bc20d289b178e.stex" ]
 
 [params]
 
