@@ -4,7 +4,7 @@ enum States {AIR =1, FLOOR, HIDE}
 
 # Variables
 
-var state = States.AIR
+var state = States.FLOOR
 var velocity = Vector2(0,0)
 var lambSauce = 0
 
