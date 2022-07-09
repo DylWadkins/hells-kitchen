@@ -794,9 +794,6 @@ collision_mask = 2
 speed = 60
 target_position = 350
 
-[node name="Player" parent="." instance=ExtResource( 2 )]
-position = Vector2( 279, 46 )
-
 [node name="Kitchen Tileset" type="TileMap" parent="."]
 tile_set = SubResource( 3 )
 cell_size = Vector2( 32, 32 )
@@ -810,6 +807,9 @@ cell_size = Vector2( 32, 32 )
 collision_layer = 2
 format = 1
 tile_data = PoolIntArray( -131067, -1610612736, 0, -131066, -1610612736, 0, -131065, -1610612736, 0, -131064, -1610612736, 0, -131063, -1610612736, 0, -131062, -1610612736, 0, -131061, -1610612735, 0 )
+
+[node name="Player" parent="." instance=ExtResource( 2 )]
+position = Vector2( 279, 46 )
 
 [node name="Area2D" parent="." instance=ExtResource( 3 )]
 position = Vector2( 441, 61 )
