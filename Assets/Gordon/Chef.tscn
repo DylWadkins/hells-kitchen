@@ -365,14 +365,14 @@ anims/RESET = SubResource( 4 )
 [node name="EyeSight" type="Area2D" parent="."]
 collision_layer = 16
 
-[node name="CollisionShape2D" type="CollisionShape2D" parent="EyeSight"]
+[node name="Eye" type="CollisionShape2D" parent="EyeSight"]
 rotation = -1.5708
 shape = SubResource( 7 )
 
 [node name="side_checker" type="Area2D" parent="."]
 collision_layer = 0
 
-[node name="CollisionShape2D" type="CollisionShape2D" parent="side_checker"]
+[node name="Side" type="CollisionShape2D" parent="side_checker"]
 position = Vector2( 1.5, -1 )
 shape = SubResource( 8 )
 

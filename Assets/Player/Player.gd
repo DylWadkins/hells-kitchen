@@ -10,9 +10,9 @@ onready var state_machine = $AnimationTree.get("parameters/playback")
 
 # Constant Variables
 
-const SPEED = 120
+const SPEED = 90
 const GRAVITY = 30
-const JUMPFORCE = -500
+const JUMPFORCE = -450
 
 # code that is run every 60 fps, maybe... correct this is im wrong lol
 # code that is run every frame
