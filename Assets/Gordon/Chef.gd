@@ -22,17 +22,16 @@ func _physics_process(delta):
 			if player:
 				state = States.CHASE
 				continue
-			print("Patrol")
+			#print("Patrol")
 			velocity.y += 20
 			velocity.x = SPEED * direction
 			velocity = move_and_slide(velocity,Vector2.UP)
 			if is_on_wall():
-				$Sprite.scale.x *= sign(direction.x)
 				direction = direction * -1
 		States.CHASE:
 			if !player:
 				state = States.PATROL
-			print("CHASE")
+			#print("CHASE")
 			velocity = Vector2.ZERO
 			if player:
 					velocity = position.direction_to(player.position) * SPEED
