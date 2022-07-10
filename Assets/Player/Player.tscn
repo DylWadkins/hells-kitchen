@@ -8,7 +8,7 @@
 extents = Vector2( 7, 16 )
 
 [sub_resource type="Animation" id=5]
-resource_name = "Idle"
+resource_name = "Idle Right"
 loop = true
 tracks/0/type = "value"
 tracks/0/path = NodePath("../Sprite:texture")
@@ -17,7 +17,7 @@ tracks/0/loop_wrap = true
 tracks/0/imported = false
 tracks/0/enabled = true
 tracks/0/keys = {
-"times": PoolRealArray( 0.00407522 ),
+"times": PoolRealArray( 0 ),
 "transitions": PoolRealArray( 1 ),
 "update": 0,
 "values": [ ExtResource( 2 ) ]
@@ -41,7 +41,7 @@ tracks/2/loop_wrap = true
 tracks/2/imported = false
 tracks/2/enabled = true
 tracks/2/keys = {
-"times": PoolRealArray( 0.00407522 ),
+"times": PoolRealArray( 0 ),
 "transitions": PoolRealArray( 1 ),
 "update": 0,
 "values": [ 5 ]
@@ -111,7 +111,7 @@ tracks/3/keys = {
 }
 
 [sub_resource type="Animation" id=8]
-resource_name = "Run"
+resource_name = "Run Right"
 length = 1.2
 loop = true
 tracks/0/type = "value"
@@ -175,13 +175,13 @@ animation = "Run"
 
 [sub_resource type="AnimationNodeStateMachine" id=13]
 states/Idle/node = SubResource( 9 )
-states/Idle/position = Vector2( 555, 105 )
+states/Idle/position = Vector2( 205, 77 )
 states/Run/node = SubResource( 10 )
-states/Run/position = Vector2( 555, 193 )
+states/Run/position = Vector2( 545, 77 )
 transitions = [ "Idle", "Run", SubResource( 11 ), "Run", "Idle", SubResource( 12 ) ]
 start_node = "Idle"
 
-[sub_resource type="AnimationNodeStateMachinePlayback" id=3]
+[sub_resource type="AnimationNodeStateMachinePlayback" id=14]
 
 [node name="Player" type="KinematicBody2D"]
 collision_mask = 12
@@ -219,7 +219,7 @@ anims/Run = SubResource( 8 )
 tree_root = SubResource( 13 )
 anim_player = NodePath("../AnimationPlayer")
 active = true
-parameters/playback = SubResource( 3 )
+parameters/playback = SubResource( 14 )
 
 [node name="Timer" type="Timer" parent="."]
 wait_time = 2.0
