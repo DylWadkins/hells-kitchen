@@ -26,10 +26,8 @@ func _physics_process(delta):
 				continue
 			if Input.is_action_pressed("right"):
 				velocity.x = lerp(velocity.x,SPEED,0.1) if velocity.x < SPEED  else lerp(velocity.x,SPEED,0.03)
-				$Sprite.flip_h = false
 			elif Input.is_action_pressed("left"):
 				velocity.x = lerp(velocity.x,-SPEED,0.1) if velocity.x > - SPEED  else lerp(velocity.x,SPEED,0.03)
-				$Sprite.flip_h = true
 			else:
 				velocity.x = lerp(velocity.x,0,0.1)
 			move_and_fall()
@@ -40,7 +38,6 @@ func _physics_process(delta):
 				state = States.AIR
 			if Input.is_action_pressed("right"):
 				velocity.x = lerp(velocity.x,SPEED,0.1)
-				
 				state_machine.travel("Run Right")
 			elif Input.is_action_pressed("left"):
 				velocity.x = lerp(velocity.x, -SPEED, 0.1)
