@@ -38,12 +38,15 @@ func _physics_process(delta):
 				state = States.AIR
 			if Input.is_action_pressed("right"):
 				velocity.x = lerp(velocity.x,SPEED,0.1)
-				state_machine.travel("Run Right")
+				$Sprite.flip_h = false
+				state_machine.travel("Run")
 			elif Input.is_action_pressed("left"):
 				velocity.x = lerp(velocity.x, -SPEED, 0.1)
-				state_machine.travel("Run Left")
+				$Sprite.flip_h = true
+				state_machine.travel("Run")
 			else:
 				velocity.x = lerp(velocity.x,0,0.1)
+				state_machine.travel("Idle")
 			if Input.is_action_just_pressed("jump"):
 				velocity.y = JUMPFORCE
 				state = States.AIR
