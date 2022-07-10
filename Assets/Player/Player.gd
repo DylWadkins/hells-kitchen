@@ -1,6 +1,6 @@
 extends KinematicBody2D
 # Finite State Machine for organizing code whether player is on the floor vs air vs hiding
-enum States {AIR =1, FLOOR, HIDE}
+enum States {AIR =1, FLOOR}
 
 # Variables
 
@@ -10,9 +10,9 @@ var lambSauce = 0
 
 # Constant Variables
 
-const SPEED = 130
+const SPEED = 120
 const GRAVITY = 30
-const JUMPFORCE = -750
+const JUMPFORCE = -500
 
 # code that is run every 60 fps, maybe... correct this is im wrong lol
 # code that is run every frame
@@ -62,5 +62,4 @@ func _physics_process(delta):
 func move_and_fall():
 	velocity.y = velocity.y + GRAVITY
 	velocity = move_and_slide(velocity,Vector2.UP)
-	
 	

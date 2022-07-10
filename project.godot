@@ -21,7 +21,7 @@ _global_script_class_icons={
 [application]
 
 config/name="Hell's Kitchen"
-run/main_scene="res://world.tscn"
+run/main_scene="res://Assets/Main Menu/Main Menu.tscn"
 config/icon="res://gordon-icon.png"
 
 [display]

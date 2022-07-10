@@ -1,0 +1,21 @@
+[remap]
+
+importer="wav"
+type="AudioStreamSample"
+path="res://.import/Ohio Players - 'Fire' (1975).wav-9e7c9c44403f636e27cdd0cd594b8a9c.sample"
+
+[deps]
+
+source_file="res://Assets/Main Menu/Music/Ohio Players - 'Fire' (1975).wav"
+dest_files=[ "res://.import/Ohio Players - 'Fire' (1975).wav-9e7c9c44403f636e27cdd0cd594b8a9c.sample" ]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=false
+edit/normalize=false
+edit/loop=false
+compress/mode=0
