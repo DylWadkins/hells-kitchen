@@ -58,10 +58,10 @@ texture = ExtResource( 5 )
 expand = true
 
 [node name="Button" type="Button" parent="."]
-margin_left = 91.0
-margin_top = 136.0
-margin_right = 223.0
-margin_bottom = 162.0
+margin_left = 105.661
+margin_top = 138.863
+margin_right = 210.661
+margin_bottom = 160.863
 custom_colors/font_color_disabled = Color( 0.027451, 0.0156863, 0.0156863, 1 )
 custom_colors/font_color = Color( 0, 0, 0, 1 )
 custom_colors/font_color_hover = Color( 0.588235, 0.0117647, 0.0117647, 1 )

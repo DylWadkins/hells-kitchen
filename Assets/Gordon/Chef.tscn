@@ -1,9 +1,10 @@
-[gd_scene load_steps=13 format=2]
+[gd_scene load_steps=14 format=2]
 
 [ext_resource path="res://Assets/Gordon/chef-ramsey-idle.png" type="Texture" id=1]
 [ext_resource path="res://Assets/Gordon/Chef.gd" type="Script" id=2]
 [ext_resource path="res://Assets/Gordon/chef-ramsey-walk.png" type="Texture" id=3]
 [ext_resource path="res://Assets/Sounds/Donkey.ogg" type="AudioStream" id=4]
+[ext_resource path="res://Assets/Sounds/Lamb Sauce.ogg" type="AudioStream" id=5]
 
 [sub_resource type="RectangleShape2D" id=1]
 extents = Vector2( 12.5, 30.5 )
@@ -336,7 +337,7 @@ radius = 35.5012
 height = 110.998
 
 [sub_resource type="RectangleShape2D" id=8]
-extents = Vector2( 17, 34 )
+extents = Vector2( 20.5, 34 )
 
 [node name="Chef" type="KinematicBody2D"]
 position = Vector2( 100, 100 )
@@ -372,12 +373,17 @@ shape = SubResource( 7 )
 collision_layer = 0
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="side_checker"]
-position = Vector2( 2, -1 )
+position = Vector2( 1.5, -1 )
 shape = SubResource( 8 )
 
 [node name="Donkey" type="AudioStreamPlayer" parent="."]
 stream = ExtResource( 4 )
 volume_db = -29.424
 
+[node name="Lamb" type="AudioStreamPlayer" parent="."]
+stream = ExtResource( 5 )
+volume_db = -20.8
+
 [connection signal="body_entered" from="EyeSight" to="." method="_on_EyeSight_body_entered"]
 [connection signal="body_exited" from="EyeSight" to="." method="_on_EyeSight_body_exited"]
+[connection signal="body_entered" from="side_checker" to="." method="_on_side_checker_body_entered"]

@@ -29,7 +29,16 @@ func _physics_process(delta):
 func _on_EyeSight_body_entered(body):
 	  player = body
 	  $Donkey.play()
+	  
+	  
 
 
 func _on_EyeSight_body_exited(body):
 	 player = null
+
+
+
+func _on_side_checker_body_entered(body):
+	 if body.get_collision_layer() == 1:
+		  body.hurt(position.x)
+	 $Lamb.play()
