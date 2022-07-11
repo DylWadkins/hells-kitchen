@@ -7,7 +7,7 @@
 [ext_resource path="res://Assets/Sounds/Lamb Sauce.ogg" type="AudioStream" id=5]
 
 [sub_resource type="RectangleShape2D" id=1]
-extents = Vector2( 12.5, 30.5 )
+extents = Vector2( 13.25, 30.25 )
 
 [sub_resource type="Animation" id=2]
 resource_name = "Idle Left"
@@ -333,14 +333,13 @@ tracks/4/keys = {
 }
 
 [sub_resource type="CapsuleShape2D" id=7]
-radius = 35.5012
-height = 110.998
+radius = 24.0003
+height = 123.999
 
 [sub_resource type="RectangleShape2D" id=8]
-extents = Vector2( 20.5, 34 )
+extents = Vector2( 16, 30.5 )
 
 [node name="Chef" type="KinematicBody2D"]
-position = Vector2( 100, 100 )
 collision_layer = 2
 collision_mask = 4
 script = ExtResource( 2 )
@@ -351,7 +350,7 @@ flip_h = true
 hframes = 2
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
-position = Vector2( -0.5, 4.5 )
+position = Vector2( 0.75, 4.75 )
 shape = SubResource( 1 )
 
 [node name="AnimationPlayer" type="AnimationPlayer" parent="."]
@@ -366,6 +365,7 @@ anims/RESET = SubResource( 4 )
 collision_layer = 16
 
 [node name="Eye" type="CollisionShape2D" parent="EyeSight"]
+position = Vector2( 0, 2 )
 rotation = -1.5708
 shape = SubResource( 7 )
 
@@ -373,7 +373,7 @@ shape = SubResource( 7 )
 collision_layer = 0
 
 [node name="Side" type="CollisionShape2D" parent="side_checker"]
-position = Vector2( 1.5, -1 )
+position = Vector2( 1, 5 )
 shape = SubResource( 8 )
 
 [node name="Donkey" type="AudioStreamPlayer" parent="."]
@@ -384,6 +384,11 @@ volume_db = -29.424
 stream = ExtResource( 5 )
 volume_db = -20.8
 
+[node name="Timer" type="Timer" parent="."]
+wait_time = 0.05
+one_shot = true
+
 [connection signal="body_entered" from="EyeSight" to="." method="_on_EyeSight_body_entered"]
 [connection signal="body_exited" from="EyeSight" to="." method="_on_EyeSight_body_exited"]
 [connection signal="body_entered" from="side_checker" to="." method="_on_side_checker_body_entered"]
+[connection signal="timeout" from="Timer" to="." method="_on_Timer_timeout"]

@@ -12,7 +12,7 @@ onready var state_machine = $AnimationTree.get("parameters/playback")
 
 const SPEED = 90
 const GRAVITY = 30
-const JUMPFORCE = -450
+const JUMPFORCE = -500
 
 # code that is run every frame
 func _physics_process(delta):

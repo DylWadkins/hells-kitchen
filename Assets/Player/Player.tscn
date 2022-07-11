@@ -5,7 +5,7 @@
 [ext_resource path="res://Assets/Player/Animation/PlayerRun.png" type="Texture" id=3]
 
 [sub_resource type="RectangleShape2D" id=1]
-extents = Vector2( 7, 16 )
+extents = Vector2( 6.875, 14.5 )
 
 [sub_resource type="Animation" id=5]
 resource_name = "Idle Right"
@@ -194,7 +194,7 @@ flip_h = true
 hframes = 5
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
-position = Vector2( -1.5, 0 )
+position = Vector2( -1.25, 3 )
 scale = Vector2( 2, 2 )
 shape = SubResource( 1 )
 
@@ -223,5 +223,6 @@ parameters/playback = SubResource( 14 )
 
 [node name="Timer" type="Timer" parent="."]
 wait_time = 2.2
+one_shot = true
 
 [connection signal="timeout" from="Timer" to="." method="_on_Timer_timeout"]

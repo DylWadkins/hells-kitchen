@@ -7,7 +7,6 @@ var state = States.PATROL
 var velocity = Vector2.ZERO
 var player = null
 export var direction = -1 
-var detects_walls = true
 
 # Constant Variables
 
@@ -22,22 +21,26 @@ func _physics_process(delta):
 			if player:
 				state = States.CHASE
 				continue
-			#print("Patrol")
+			print("Patrol")
 			velocity.y += 20
 			velocity.x = SPEED * direction
 			velocity = move_and_slide(velocity,Vector2.UP)
 			if is_on_wall():
 				direction = direction * -1
+				$Sprite.flip_h = not $Sprite.flip_h
+			if direction == -1:
+				$AnimationPlayer.play("Walk Left")
+			if direction == 1:
+				$AnimationPlayer.play("Walk Right")
 		States.CHASE:
 			if !player:
 				state = States.PATROL
-			#print("CHASE")
+			print("CHASE")
 			velocity = Vector2.ZERO
 			if player:
 					velocity = position.direction_to(player.position) * SPEED
 					velocity = move_and_slide(velocity)
-		#  States.PATROL:
-			
+
 
 func _on_EyeSight_body_entered(body):
 	  player = body
@@ -52,6 +55,11 @@ func _on_EyeSight_body_exited(body):
 
 func _on_side_checker_body_entered(body):
 	 if body.get_collision_layer() == 1:
-		  body.hurt(position.x)
-	 $Lamb.play()
+		  $Timer.start()
 	 
+
+
+func _on_Timer_timeout():
+	$Lamb.play()
+	player.set_collision_layer_bit(0,false)
+	player.hurt(position.x)

@@ -1,4 +1,4 @@
-[gd_scene load_steps=10 format=2]
+[gd_scene load_steps=11 format=2]
 
 [ext_resource path="res://Reset.gd" type="Script" id=1]
 [ext_resource path="res://Assets/Game Over Screen/Fonts/TheDefilerG.ttf" type="DynamicFontData" id=2]
@@ -6,6 +6,10 @@
 [ext_resource path="res://Assets/Game Over Screen/Images/118-1180554_based-on-gordon-ramsay-chef-gordon-ramsay.png" type="Texture" id=4]
 [ext_resource path="res://Assets/Game Over Screen/Images/fire.png" type="Texture" id=5]
 [ext_resource path="res://Assets/Game Over Screen/Music/Hell's Kitchen Elimination Music - Take Your Jacket Off.wav" type="AudioStream" id=6]
+
+[sub_resource type="DynamicFont" id=4]
+size = 22
+font_data = ExtResource( 2 )
 
 [sub_resource type="DynamicFont" id=1]
 size = 25
@@ -51,11 +55,23 @@ margin_bottom = 180.0
 texture = ExtResource( 4 )
 expand = true
 
+[node name="Button2" type="Button" parent="."]
+margin_left = 158.0
+margin_top = 121.0
+margin_right = 230.0
+margin_bottom = 150.0
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+custom_colors/font_color_hover = Color( 0.611765, 0.027451, 0.027451, 1 )
+custom_colors/font_color_pressed = Color( 0.803922, 0.0313726, 0.0313726, 1 )
+custom_fonts/font = SubResource( 4 )
+text = "Main Menu"
+flat = true
+
 [node name="Button" type="Button" parent="."]
 margin_left = 154.0
-margin_top = 56.0
+margin_top = 53.0
 margin_right = 226.0
-margin_bottom = 88.0
+margin_bottom = 85.0
 custom_colors/font_color = Color( 0, 0, 0, 1 )
 custom_colors/font_color_hover = Color( 0.501961, 0.0313726, 0.0313726, 1 )
 custom_colors/font_color_pressed = Color( 1, 0, 0, 1 )
@@ -86,4 +102,5 @@ custom_fonts/font = SubResource( 3 )
 text = "And Fuck 
     Off"
 
+[connection signal="pressed" from="Button2" to="Button" method="_on_Button2_pressed"]
 [connection signal="pressed" from="Button" to="Button" method="_on_Button_pressed"]
