@@ -35,10 +35,11 @@ func _physics_process(delta):
 		States.CHASE:
 			if !player:
 				state = States.PATROL
+				continue
 			print("CHASE")
 			velocity = Vector2.ZERO
 			if player:
-					velocity = position.direction_to(player.position) * SPEED
+					velocity = position.direction_to(player.position) * SPEED 
 					velocity = move_and_slide(velocity)
 
 
@@ -55,7 +56,7 @@ func _on_EyeSight_body_exited(body):
 
 func _on_side_checker_body_entered(body):
 	 if body.get_collision_layer() == 1:
-		  $Timer.start()
+		  $Kill.start()
 	 
 
 
@@ -63,3 +64,7 @@ func _on_Timer_timeout():
 	$Lamb.play()
 	player.set_collision_layer_bit(0,false)
 	player.hurt(position.x)
+
+
+func _on_VisibilityNotifier2D_screen_entered():
+	$Violin.play()

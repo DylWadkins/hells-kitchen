@@ -1,10 +1,11 @@
-[gd_scene load_steps=14 format=2]
+[gd_scene load_steps=15 format=2]
 
 [ext_resource path="res://Assets/Gordon/chef-ramsey-idle.png" type="Texture" id=1]
 [ext_resource path="res://Assets/Gordon/Chef.gd" type="Script" id=2]
 [ext_resource path="res://Assets/Gordon/chef-ramsey-walk.png" type="Texture" id=3]
 [ext_resource path="res://Assets/Sounds/Donkey.ogg" type="AudioStream" id=4]
 [ext_resource path="res://Assets/Sounds/Lamb Sauce.ogg" type="AudioStream" id=5]
+[ext_resource path="res://Assets/Sounds/Violin Sting.ogg" type="AudioStream" id=6]
 
 [sub_resource type="RectangleShape2D" id=1]
 extents = Vector2( 13.25, 30.25 )
@@ -384,11 +385,19 @@ volume_db = -29.424
 stream = ExtResource( 5 )
 volume_db = -20.8
 
-[node name="Timer" type="Timer" parent="."]
+[node name="Violin" type="AudioStreamPlayer" parent="."]
+stream = ExtResource( 6 )
+volume_db = -17.756
+
+[node name="Kill" type="Timer" parent="."]
 wait_time = 0.05
 one_shot = true
+
+[node name="Sting" type="VisibilityNotifier2D" parent="."]
+scale = Vector2( 0.125, 0.95 )
 
 [connection signal="body_entered" from="EyeSight" to="." method="_on_EyeSight_body_entered"]
 [connection signal="body_exited" from="EyeSight" to="." method="_on_EyeSight_body_exited"]
 [connection signal="body_entered" from="side_checker" to="." method="_on_side_checker_body_entered"]
-[connection signal="timeout" from="Timer" to="." method="_on_Timer_timeout"]
+[connection signal="timeout" from="Kill" to="." method="_on_Timer_timeout"]
+[connection signal="screen_entered" from="Sting" to="." method="_on_VisibilityNotifier2D_screen_entered"]
