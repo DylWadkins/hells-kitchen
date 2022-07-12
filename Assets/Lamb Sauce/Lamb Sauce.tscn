@@ -5,7 +5,7 @@
 [ext_resource path="res://Assets/Lamb Sauce/Lamb Sauce.gd" type="Script" id=3]
 
 [sub_resource type="RectangleShape2D" id=1]
-extents = Vector2( 15.5, 12.5 )
+extents = Vector2( 15, 8.5 )
 
 [node name="Area2D" type="Area2D"]
 collision_layer = 8
@@ -16,8 +16,15 @@ script = ExtResource( 3 )
 texture = ExtResource( 2 )
 
 [node name="Collision" type="CollisionShape2D" parent="."]
-position = Vector2( -1, 4 )
+position = Vector2( -1, 6.5 )
 shape = SubResource( 1 )
 
 [node name="Slurp" type="AudioStreamPlayer2D" parent="."]
 stream = ExtResource( 1 )
+
+[node name="Timer" type="Timer" parent="."]
+wait_time = 0.4
+one_shot = true
+
+[connection signal="finished" from="Slurp" to="." method="_on_Slurp_finished"]
+[connection signal="timeout" from="Timer" to="." method="_on_Timer_timeout"]

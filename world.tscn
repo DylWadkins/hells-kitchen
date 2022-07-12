@@ -947,6 +947,9 @@ tile_data = PoolIntArray( -131078, -1610612722, 0, -131077, -1610612722, 0, -131
 [node name="Bread Pickup" parent="." instance=ExtResource( 3 )]
 position = Vector2( -49, 57 )
 
+[node name="Lamb Sauce" parent="." instance=ExtResource( 6 )]
+position = Vector2( 16, 60 )
+
 [node name="Player" parent="." instance=ExtResource( 2 )]
 position = Vector2( -143, 64 )
 
@@ -958,5 +961,4 @@ stream = ExtResource( 5 )
 volume_db = -37.542
 autoplay = true
 
-[node name="Lamb Sauce" parent="." instance=ExtResource( 6 )]
-position = Vector2( 16, 60 )
+[connection signal="body_entered" from="Lamb Sauce" to="Lamb Sauce" method="_on_Lamb_Sauce_body_entered"]
