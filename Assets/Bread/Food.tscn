@@ -30,6 +30,5 @@ wait_time = 7.0
 one_shot = true
 
 [connection signal="body_entered" from="." to="." method="_on_Area2D_body_entered"]
-[connection signal="body_exited" from="." to="." method="_on_Area2D_body_exited"]
 [connection signal="finished" from="Crunch" to="." method="_on_Crunch_finished"]
 [connection signal="timeout" from="Timer" to="." method="_on_Timer_timeout"]

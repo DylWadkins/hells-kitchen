@@ -8,7 +8,6 @@ var velocity = Vector2(0,0)
 var lambSauce = 0
 onready var state_machine = $AnimationTree.get("parameters/playback")
 onready var sprite = $Sprite
-onready var animationPlayer = $AnimationPlayer
 
 # Constant Variables
 
@@ -28,11 +27,9 @@ func _physics_process(delta):
 			if Input.is_action_pressed("right"):
 				velocity.x = lerp(velocity.x,SPEED,0.1) if velocity.x < SPEED  else lerp(velocity.x,SPEED,0.03)
 				sprite.flip_h = false
-				animationPlayer.play("Run")
 			elif Input.is_action_pressed("left"):
 				velocity.x = lerp(velocity.x,-SPEED,0.1) if velocity.x > - SPEED  else lerp(velocity.x,SPEED,0.03)
 				sprite.flip_h = true
-				animationPlayer.play("Run")
 			else:
 				velocity.x = lerp(velocity.x,0,FRICTION)
 
@@ -46,13 +43,14 @@ func _physics_process(delta):
 			if Input.is_action_pressed("right"):
 				velocity.x = lerp(velocity.x,SPEED,0.1)
 				sprite.flip_h = false
-				animationPlayer.play("Run")
+				state_machine.travel("Run")
 			elif Input.is_action_pressed("left"):
 				velocity.x = lerp(velocity.x, -SPEED, 0.1)
 				sprite.flip_h = true
-				animationPlayer.play("Run")
+				state_machine.travel("Run")
 			else:
 				velocity.x = lerp(velocity.x,0,FRICTION)
+				state_machine.travel("Idle")
 			if Input.is_action_just_pressed("jump"):
 				velocity.y = JUMPFORCE
 				state = States.AIR
