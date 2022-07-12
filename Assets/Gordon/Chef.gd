@@ -10,7 +10,7 @@ export var direction = -1
 
 # Constant Variables
 
-const  SPEED = 55
+const SPEED = 55
 const GRAVITY = 30
 const VIOLIN_CHANCE = 0.35
 

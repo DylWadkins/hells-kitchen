@@ -7,6 +7,8 @@ var state = States.FLOOR
 var velocity = Vector2(0,0)
 var lambSauce = 0
 onready var state_machine = $AnimationTree.get("parameters/playback")
+onready var sprite = $Sprite
+onready var animationPlayer = $AnimationPlayer
 
 # Constant Variables
 
@@ -17,7 +19,6 @@ const FRICTION = 0.5
 
 # code that is run every frame
 func _physics_process(delta):
-	var current = state_machine.get_current_node()
 # switch statement for the two states
 	match state:
 		States.AIR:
@@ -26,10 +27,16 @@ func _physics_process(delta):
 				continue
 			if Input.is_action_pressed("right"):
 				velocity.x = lerp(velocity.x,SPEED,0.1) if velocity.x < SPEED  else lerp(velocity.x,SPEED,0.03)
+				sprite.flip_h = false
+				animationPlayer.play("Run")
 			elif Input.is_action_pressed("left"):
 				velocity.x = lerp(velocity.x,-SPEED,0.1) if velocity.x > - SPEED  else lerp(velocity.x,SPEED,0.03)
+				sprite.flip_h = true
+				animationPlayer.play("Run")
 			else:
 				velocity.x = lerp(velocity.x,0,FRICTION)
+
+				
 			move_and_fall()
 			
 # State for when player is on floor
@@ -38,25 +45,18 @@ func _physics_process(delta):
 				state = States.AIR
 			if Input.is_action_pressed("right"):
 				velocity.x = lerp(velocity.x,SPEED,0.1)
-				$Sprite.flip_h = false
-				state_machine.travel("Run")
+				sprite.flip_h = false
+				animationPlayer.play("Run")
 			elif Input.is_action_pressed("left"):
 				velocity.x = lerp(velocity.x, -SPEED, 0.1)
-				$Sprite.flip_h = true
-				state_machine.travel("Run")
+				sprite.flip_h = true
+				animationPlayer.play("Run")
 			else:
 				velocity.x = lerp(velocity.x,0,FRICTION)
-				state_machine.travel("Idle")
 			if Input.is_action_just_pressed("jump"):
 				velocity.y = JUMPFORCE
 				state = States.AIR
 			move_and_fall()
-			
-			
-			
-			
-			
-			
 			
 			
 # Function for moving and falling
