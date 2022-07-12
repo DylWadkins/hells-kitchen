@@ -1,0 +1,15 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+path="res://.import/Slurp.mp3-78c1495e908fcf1c450b0e9072704582.mp3str"
+
+[deps]
+
+source_file="res://Assets/Sounds/Slurp.mp3"
+dest_files=[ "res://.import/Slurp.mp3-78c1495e908fcf1c450b0e9072704582.mp3str" ]
+
+[params]
+
+loop=true
+loop_offset=0

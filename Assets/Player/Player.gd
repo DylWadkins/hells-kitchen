@@ -5,7 +5,7 @@ enum States {AIR =1, FLOOR}
 # Variables
 var state = States.FLOOR
 var velocity = Vector2(0,0)
-var lambSauce = 0
+var lambSauce = false
 onready var state_machine = $AnimationTree.get("parameters/playback")
 onready var sprite = $Sprite
 
