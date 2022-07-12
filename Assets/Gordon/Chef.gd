@@ -7,6 +7,7 @@ var state = States.PATROL
 var velocity = Vector2.ZERO
 var player = null
 export var direction = -1 
+var last_direction = null
 
 # Constant Variables
 
@@ -22,26 +23,32 @@ func _physics_process(delta):
 			if player:
 				state = States.CHASE
 				continue
-			print("Patrol")
+			#print("Patrol")
+			$AnimationPlayer.play("Walk")
 			velocity.y += 20
 			velocity.x = SPEED * direction
 			velocity = move_and_slide(velocity,Vector2.UP)
 			if is_on_wall():
 				direction = direction * -1
 				$Sprite.flip_h = not $Sprite.flip_h
-			if direction == -1:
-				$AnimationPlayer.play("Walk Left")
-			if direction == 1:
-				$AnimationPlayer.play("Walk Right")
 		States.CHASE:
 			if !player:
 				state = States.PATROL
 				continue
-			print("CHASE")
+			#print("CHASE")
+			$AnimationPlayer.play("Walk")
 			velocity = Vector2.ZERO
 			if player:
 					velocity.x = position.direction_to(player.position).x * SPEED 
 					velocity = move_and_slide(velocity)
+			if player.position.x < get_position().x:
+				direction = position.direction_to(player.position).x
+				$Sprite.flip_h = true
+			elif player.position.x > get_position().x:
+				direction = position.direction_to(player.position).x
+				$Sprite.flip_h = false
+			last_direction = direction
+
 
 
 func _on_EyeSight_body_entered(body):
@@ -52,6 +59,7 @@ func _on_EyeSight_body_entered(body):
 
 func _on_EyeSight_body_exited(body):
 	 player = null
+	 print(last_direction)
 
 
 
