@@ -13,6 +13,7 @@ onready var state_machine = $AnimationTree.get("parameters/playback")
 const SPEED = 90
 const GRAVITY = 30
 const JUMPFORCE = -500
+const FRICTION = 0.5
 
 # code that is run every frame
 func _physics_process(delta):
@@ -28,7 +29,7 @@ func _physics_process(delta):
 			elif Input.is_action_pressed("left"):
 				velocity.x = lerp(velocity.x,-SPEED,0.1) if velocity.x > - SPEED  else lerp(velocity.x,SPEED,0.03)
 			else:
-				velocity.x = lerp(velocity.x,0,0.1)
+				velocity.x = lerp(velocity.x,0,FRICTION)
 			move_and_fall()
 			
 # State for when player is on floor
@@ -44,7 +45,7 @@ func _physics_process(delta):
 				$Sprite.flip_h = true
 				state_machine.travel("Run")
 			else:
-				velocity.x = lerp(velocity.x,0,0.1)
+				velocity.x = lerp(velocity.x,0,FRICTION)
 				state_machine.travel("Idle")
 			if Input.is_action_just_pressed("jump"):
 				velocity.y = JUMPFORCE

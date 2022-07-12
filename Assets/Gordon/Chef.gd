@@ -12,6 +12,7 @@ export var direction = -1
 
 const  SPEED = 55
 const GRAVITY = 30
+const VIOLIN_CHANCE = 0.35
 
 
 func _physics_process(delta):
@@ -66,6 +67,6 @@ func _on_Timer_timeout():
 
 
 func _on_VisibilityNotifier2D_screen_entered():
-	# 35% chance to play violin sting
-	if randf() < 0.35:
+	# percent chance to play violin sting
+	if randf() < VIOLIN_CHANCE:
 		$Violin.play()
