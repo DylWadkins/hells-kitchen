@@ -1,16 +1,16 @@
 [gd_scene load_steps=36 format=2]
 
-[ext_resource path="res://Assets/Gordon/Chef.tscn" type="PackedScene" id=1]
-[ext_resource path="res://Assets/Player/Player.tscn" type="PackedScene" id=2]
-[ext_resource path="res://Assets/Bread/Food.tscn" type="PackedScene" id=3]
-[ext_resource path="res://Assets/Textures/12_Kitchen_32x32.png" type="Texture" id=4]
-[ext_resource path="res://Assets/Sounds/Awaiting - Hell's Kitchen OST.wav" type="AudioStream" id=5]
-[ext_resource path="res://Assets/Lamb Sauce/Lamb Sauce.tscn" type="PackedScene" id=6]
-[ext_resource path="res://Assets/Door/Door.tscn" type="PackedScene" id=7]
+[ext_resource path="res://Assets/Door/Door.tscn" type="PackedScene" id=1]
+[ext_resource path="res://Assets/Gordon/Chef.tscn" type="PackedScene" id=2]
+[ext_resource path="res://Assets/Lamb Sauce/Lamb Sauce.tscn" type="PackedScene" id=3]
+[ext_resource path="res://Assets/Player/Player.tscn" type="PackedScene" id=4]
+[ext_resource path="res://Assets/Bread/Food.tscn" type="PackedScene" id=5]
+[ext_resource path="res://Assets/Textures/12_Kitchen_32x32.png" type="Texture" id=6]
+[ext_resource path="res://Assets/Sounds/Awaiting - Hell's Kitchen OST.wav" type="AudioStream" id=7]
 
 [sub_resource type="TileSet" id=9]
 0/name = "12_Kitchen_32x32.png 0"
-0/texture = ExtResource( 4 )
+0/texture = ExtResource( 6 )
 0/tex_offset = Vector2( 0, 0 )
 0/modulate = Color( 1, 1, 1, 1 )
 0/region = Rect2( 224, 160, 32, 32 )
@@ -24,7 +24,7 @@
 0/shapes = [  ]
 0/z_index = 0
 1/name = "12_Kitchen_32x32.png 1"
-1/texture = ExtResource( 4 )
+1/texture = ExtResource( 6 )
 1/tex_offset = Vector2( 0, 0 )
 1/modulate = Color( 1, 1, 1, 1 )
 1/region = Rect2( 256, 160, 32, 32 )
@@ -38,7 +38,7 @@
 1/shapes = [  ]
 1/z_index = 0
 2/name = "12_Kitchen_32x32.png 2"
-2/texture = ExtResource( 4 )
+2/texture = ExtResource( 6 )
 2/tex_offset = Vector2( 0, 0 )
 2/modulate = Color( 1, 1, 1, 1 )
 2/region = Rect2( 256, 192, 32, 32 )
@@ -52,7 +52,7 @@
 2/shapes = [  ]
 2/z_index = 0
 3/name = "12_Kitchen_32x32.png 3"
-3/texture = ExtResource( 4 )
+3/texture = ExtResource( 6 )
 3/tex_offset = Vector2( 0, 0 )
 3/modulate = Color( 1, 1, 1, 1 )
 3/region = Rect2( 224, 192, 32, 32 )
@@ -66,7 +66,7 @@
 3/shapes = [  ]
 3/z_index = 0
 4/name = "12_Kitchen_32x32.png 4"
-4/texture = ExtResource( 4 )
+4/texture = ExtResource( 6 )
 4/tex_offset = Vector2( 0, 0 )
 4/modulate = Color( 1, 1, 1, 1 )
 4/region = Rect2( 0, 160, 32, 32 )
@@ -80,7 +80,7 @@
 4/shapes = [  ]
 4/z_index = 0
 5/name = "12_Kitchen_32x32.png 5"
-5/texture = ExtResource( 4 )
+5/texture = ExtResource( 6 )
 5/tex_offset = Vector2( 0, 0 )
 5/modulate = Color( 1, 1, 1, 1 )
 5/region = Rect2( 64, 160, 32, 32 )
@@ -94,7 +94,7 @@
 5/shapes = [  ]
 5/z_index = 0
 6/name = "12_Kitchen_32x32.png 6"
-6/texture = ExtResource( 4 )
+6/texture = ExtResource( 6 )
 6/tex_offset = Vector2( 0, 0 )
 6/modulate = Color( 1, 1, 1, 1 )
 6/region = Rect2( 64, 64, 32, 32 )
@@ -131,7 +131,7 @@ points = PoolVector2Array( 32, 20, 0.356155, 20, 0, 0, 32, 0 )
 
 [sub_resource type="TileSet" id=18]
 0/name = "12_Kitchen_32x32.png 0"
-0/texture = ExtResource( 4 )
+0/texture = ExtResource( 6 )
 0/tex_offset = Vector2( 0, 0 )
 0/modulate = Color( 1, 1, 1, 1 )
 0/region = Rect2( 320, 1344, 32, 32 )
@@ -152,7 +152,7 @@ points = PoolVector2Array( 32, 20, 0.356155, 20, 0, 0, 32, 0 )
 } ]
 0/z_index = 0
 1/name = "12_Kitchen_32x32.png 1"
-1/texture = ExtResource( 4 )
+1/texture = ExtResource( 6 )
 1/tex_offset = Vector2( 0, 0 )
 1/modulate = Color( 1, 1, 1, 1 )
 1/region = Rect2( 320, 1312, 32, 32 )
@@ -173,7 +173,7 @@ points = PoolVector2Array( 32, 20, 0.356155, 20, 0, 0, 32, 0 )
 } ]
 1/z_index = 0
 2/name = "12_Kitchen_32x32.png 2"
-2/texture = ExtResource( 4 )
+2/texture = ExtResource( 6 )
 2/tex_offset = Vector2( 0, 0 )
 2/modulate = Color( 1, 1, 1, 1 )
 2/region = Rect2( 128, 140, 32, 20 )
@@ -194,7 +194,7 @@ points = PoolVector2Array( 32, 20, 0.356155, 20, 0, 0, 32, 0 )
 } ]
 2/z_index = 0
 3/name = "12_Kitchen_32x32.png 3"
-3/texture = ExtResource( 4 )
+3/texture = ExtResource( 6 )
 3/tex_offset = Vector2( 0, 0 )
 3/modulate = Color( 1, 1, 1, 1 )
 3/region = Rect2( 160, 140, 32, 20 )
@@ -215,7 +215,7 @@ points = PoolVector2Array( 32, 20, 0.356155, 20, 0, 0, 32, 0 )
 } ]
 3/z_index = 0
 4/name = "12_Kitchen_32x32.png 4"
-4/texture = ExtResource( 4 )
+4/texture = ExtResource( 6 )
 4/tex_offset = Vector2( 0, 0 )
 4/modulate = Color( 1, 1, 1, 1 )
 4/region = Rect2( 192, 140, 32, 20 )
@@ -236,7 +236,7 @@ points = PoolVector2Array( 32, 20, 0.356155, 20, 0, 0, 32, 0 )
 } ]
 4/z_index = 0
 5/name = "12_Kitchen_32x32.png 5"
-5/texture = ExtResource( 4 )
+5/texture = ExtResource( 6 )
 5/tex_offset = Vector2( 0, 0 )
 5/modulate = Color( 1, 1, 1, 1 )
 5/region = Rect2( 128, 108, 32, 20 )
@@ -257,7 +257,7 @@ points = PoolVector2Array( 32, 20, 0.356155, 20, 0, 0, 32, 0 )
 } ]
 5/z_index = 0
 6/name = "12_Kitchen_32x32.png 6"
-6/texture = ExtResource( 4 )
+6/texture = ExtResource( 6 )
 6/tex_offset = Vector2( 0, 0 )
 6/modulate = Color( 1, 1, 1, 1 )
 6/region = Rect2( 160, 108, 32, 20 )
@@ -278,7 +278,7 @@ points = PoolVector2Array( 32, 20, 0.356155, 20, 0, 0, 32, 0 )
 } ]
 6/z_index = 0
 8/name = "12_Kitchen_32x32.png 8"
-8/texture = ExtResource( 4 )
+8/texture = ExtResource( 6 )
 8/tex_offset = Vector2( 0, 0 )
 8/modulate = Color( 1, 1, 1, 1 )
 8/region = Rect2( 160, 76, 0, 9 )
@@ -348,7 +348,7 @@ points = PoolVector2Array( 32, 32, 0, 32, 0, 0, 32, 0 )
 
 [sub_resource type="TileSet" id=3]
 0/name = "12_Kitchen_32x32.png 0"
-0/texture = ExtResource( 4 )
+0/texture = ExtResource( 6 )
 0/tex_offset = Vector2( 0, 0 )
 0/modulate = Color( 1, 1, 1, 1 )
 0/region = Rect2( 288, 750, 32, 75 )
@@ -362,7 +362,7 @@ points = PoolVector2Array( 32, 32, 0, 32, 0, 0, 32, 0 )
 0/shapes = [  ]
 0/z_index = 0
 1/name = "12_Kitchen_32x32.png 1"
-1/texture = ExtResource( 4 )
+1/texture = ExtResource( 6 )
 1/tex_offset = Vector2( 0, 0 )
 1/modulate = Color( 1, 1, 1, 1 )
 1/region = Rect2( 320, 735, 32, 90 )
@@ -376,7 +376,7 @@ points = PoolVector2Array( 32, 32, 0, 32, 0, 0, 32, 0 )
 1/shapes = [  ]
 1/z_index = 0
 4/name = "12_Kitchen_32x32.png 4"
-4/texture = ExtResource( 4 )
+4/texture = ExtResource( 6 )
 4/tex_offset = Vector2( 0, 0 )
 4/modulate = Color( 1, 1, 1, 1 )
 4/region = Rect2( 288, 100, 96, 40 )
@@ -397,7 +397,7 @@ points = PoolVector2Array( 32, 32, 0, 32, 0, 0, 32, 0 )
 } ]
 4/z_index = 0
 6/name = "12_Kitchen_32x32.png 6"
-6/texture = ExtResource( 4 )
+6/texture = ExtResource( 6 )
 6/tex_offset = Vector2( 0, 0 )
 6/modulate = Color( 1, 1, 1, 1 )
 6/region = Rect2( 384, 64, 32, 32 )
@@ -418,7 +418,7 @@ points = PoolVector2Array( 32, 32, 0, 32, 0, 0, 32, 0 )
 } ]
 6/z_index = 0
 7/name = "12_Kitchen_32x32.png 7"
-7/texture = ExtResource( 4 )
+7/texture = ExtResource( 6 )
 7/tex_offset = Vector2( 0, 0 )
 7/modulate = Color( 1, 1, 1, 1 )
 7/region = Rect2( 352, 1024, 32, 64 )
@@ -445,7 +445,7 @@ points = PoolVector2Array( 32, 32, 0, 32, 0, 0, 32, 0 )
 } ]
 7/z_index = 0
 8/name = "12_Kitchen_32x32.png 8"
-8/texture = ExtResource( 4 )
+8/texture = ExtResource( 6 )
 8/tex_offset = Vector2( 0, 0 )
 8/modulate = Color( 1, 1, 1, 1 )
 8/region = Rect2( 224, 160, 32, 32 )
@@ -466,7 +466,7 @@ points = PoolVector2Array( 32, 32, 0, 32, 0, 0, 32, 0 )
 } ]
 8/z_index = 0
 9/name = "12_Kitchen_32x32.png 9"
-9/texture = ExtResource( 4 )
+9/texture = ExtResource( 6 )
 9/tex_offset = Vector2( 0, 0 )
 9/modulate = Color( 1, 1, 1, 1 )
 9/region = Rect2( 224, 192, 32, 32 )
@@ -487,7 +487,7 @@ points = PoolVector2Array( 32, 32, 0, 32, 0, 0, 32, 0 )
 } ]
 9/z_index = 0
 10/name = "12_Kitchen_32x32.png 10"
-10/texture = ExtResource( 4 )
+10/texture = ExtResource( 6 )
 10/tex_offset = Vector2( 0, 0 )
 10/modulate = Color( 1, 1, 1, 1 )
 10/region = Rect2( 256, 160, 32, 32 )
@@ -508,7 +508,7 @@ points = PoolVector2Array( 32, 32, 0, 32, 0, 0, 32, 0 )
 } ]
 10/z_index = 0
 11/name = "12_Kitchen_32x32.png 11"
-11/texture = ExtResource( 4 )
+11/texture = ExtResource( 6 )
 11/tex_offset = Vector2( 0, 0 )
 11/modulate = Color( 1, 1, 1, 1 )
 11/region = Rect2( 256, 192, 32, 32 )
@@ -529,7 +529,7 @@ points = PoolVector2Array( 32, 32, 0, 32, 0, 0, 32, 0 )
 } ]
 11/z_index = 0
 12/name = "12_Kitchen_32x32.png 12"
-12/texture = ExtResource( 4 )
+12/texture = ExtResource( 6 )
 12/tex_offset = Vector2( 0, 0 )
 12/modulate = Color( 1, 1, 1, 1 )
 12/region = Rect2( 0, 64, 32, 32 )
@@ -543,7 +543,7 @@ points = PoolVector2Array( 32, 32, 0, 32, 0, 0, 32, 0 )
 12/shapes = [  ]
 12/z_index = 0
 13/name = "12_Kitchen_32x32.png 13"
-13/texture = ExtResource( 4 )
+13/texture = ExtResource( 6 )
 13/tex_offset = Vector2( 0, 0 )
 13/modulate = Color( 1, 1, 1, 1 )
 13/region = Rect2( 32, 64, 32, 32 )
@@ -557,7 +557,7 @@ points = PoolVector2Array( 32, 32, 0, 32, 0, 0, 32, 0 )
 13/shapes = [  ]
 13/z_index = 0
 14/name = "12_Kitchen_32x32.png 14"
-14/texture = ExtResource( 4 )
+14/texture = ExtResource( 6 )
 14/tex_offset = Vector2( 0, 0 )
 14/modulate = Color( 1, 1, 1, 1 )
 14/region = Rect2( 224, 64, 32, 32 )
@@ -578,7 +578,7 @@ points = PoolVector2Array( 32, 32, 0, 32, 0, 0, 32, 0 )
 } ]
 14/z_index = 0
 15/name = "12_Kitchen_32x32.png 15"
-15/texture = ExtResource( 4 )
+15/texture = ExtResource( 6 )
 15/tex_offset = Vector2( 0, 0 )
 15/modulate = Color( 1, 1, 1, 1 )
 15/region = Rect2( 64, 608, 32, 32 )
@@ -592,7 +592,7 @@ points = PoolVector2Array( 32, 32, 0, 32, 0, 0, 32, 0 )
 15/shapes = [  ]
 15/z_index = 0
 16/name = "12_Kitchen_32x32.png 16"
-16/texture = ExtResource( 4 )
+16/texture = ExtResource( 6 )
 16/tex_offset = Vector2( 0, 0 )
 16/modulate = Color( 1, 1, 1, 1 )
 16/region = Rect2( 64, 672, 32, 32 )
@@ -606,7 +606,7 @@ points = PoolVector2Array( 32, 32, 0, 32, 0, 0, 32, 0 )
 16/shapes = [  ]
 16/z_index = 0
 17/name = "12_Kitchen_32x32.png 17"
-17/texture = ExtResource( 4 )
+17/texture = ExtResource( 6 )
 17/tex_offset = Vector2( 0, 0 )
 17/modulate = Color( 1, 1, 1, 1 )
 17/region = Rect2( 64, 1248, 32, 32 )
@@ -620,7 +620,7 @@ points = PoolVector2Array( 32, 32, 0, 32, 0, 0, 32, 0 )
 17/shapes = [  ]
 17/z_index = 0
 18/name = "12_Kitchen_32x32.png 18"
-18/texture = ExtResource( 4 )
+18/texture = ExtResource( 6 )
 18/tex_offset = Vector2( 0, 0 )
 18/modulate = Color( 1, 1, 1, 1 )
 18/region = Rect2( 64, 1280, 32, 32 )
@@ -634,7 +634,7 @@ points = PoolVector2Array( 32, 32, 0, 32, 0, 0, 32, 0 )
 18/shapes = [  ]
 18/z_index = 0
 19/name = "12_Kitchen_32x32.png 19"
-19/texture = ExtResource( 4 )
+19/texture = ExtResource( 6 )
 19/tex_offset = Vector2( 0, 0 )
 19/modulate = Color( 1, 1, 1, 1 )
 19/region = Rect2( 130, 204, 92, 38 )
@@ -661,7 +661,7 @@ points = PoolVector2Array( 32, 32, 0, 32, 0, 0, 32, 0 )
 } ]
 19/z_index = 0
 20/name = "12_Kitchen_32x32.png 20"
-20/texture = ExtResource( 4 )
+20/texture = ExtResource( 6 )
 20/tex_offset = Vector2( 0, 0 )
 20/modulate = Color( 1, 1, 1, 1 )
 20/region = Rect2( 66, 575, 31, 26 )
@@ -675,7 +675,7 @@ points = PoolVector2Array( 32, 32, 0, 32, 0, 0, 32, 0 )
 20/shapes = [  ]
 20/z_index = 0
 21/name = "12_Kitchen_32x32.png 21"
-21/texture = ExtResource( 4 )
+21/texture = ExtResource( 6 )
 21/tex_offset = Vector2( 0, 0 )
 21/modulate = Color( 1, 1, 1, 1 )
 21/region = Rect2( 64, 1171, 42, 39 )
@@ -689,7 +689,7 @@ points = PoolVector2Array( 32, 32, 0, 32, 0, 0, 32, 0 )
 21/shapes = [  ]
 21/z_index = 0
 22/name = "12_Kitchen_32x32.png 22"
-22/texture = ExtResource( 4 )
+22/texture = ExtResource( 6 )
 22/tex_offset = Vector2( 0, 0 )
 22/modulate = Color( 1, 1, 1, 1 )
 22/region = Rect2( 63, 1369, 65, 35 )
@@ -703,7 +703,7 @@ points = PoolVector2Array( 32, 32, 0, 32, 0, 0, 32, 0 )
 22/shapes = [  ]
 22/z_index = 0
 23/name = "12_Kitchen_32x32.png 23"
-23/texture = ExtResource( 4 )
+23/texture = ExtResource( 6 )
 23/tex_offset = Vector2( 0, 0 )
 23/modulate = Color( 1, 1, 1, 1 )
 23/region = Rect2( 384, 160, 32, 32 )
@@ -724,7 +724,7 @@ points = PoolVector2Array( 32, 32, 0, 32, 0, 0, 32, 0 )
 } ]
 23/z_index = 0
 24/name = "12_Kitchen_32x32.png 24"
-24/texture = ExtResource( 4 )
+24/texture = ExtResource( 6 )
 24/tex_offset = Vector2( 0, 0 )
 24/modulate = Color( 1, 1, 1, 1 )
 24/region = Rect2( 448, 64, 32, 32 )
@@ -745,7 +745,7 @@ points = PoolVector2Array( 32, 32, 0, 32, 0, 0, 32, 0 )
 } ]
 24/z_index = 0
 25/name = "12_Kitchen_32x32.png 25"
-25/texture = ExtResource( 4 )
+25/texture = ExtResource( 6 )
 25/tex_offset = Vector2( 0, 0 )
 25/modulate = Color( 1, 1, 1, 1 )
 25/region = Rect2( 448, 160, 32, 32 )
@@ -766,7 +766,7 @@ points = PoolVector2Array( 32, 32, 0, 32, 0, 0, 32, 0 )
 } ]
 25/z_index = 0
 26/name = "12_Kitchen_32x32.png 26"
-26/texture = ExtResource( 4 )
+26/texture = ExtResource( 6 )
 26/tex_offset = Vector2( 0, 0 )
 26/modulate = Color( 1, 1, 1, 1 )
 26/region = Rect2( 0, 160, 32, 32 )
@@ -787,7 +787,7 @@ points = PoolVector2Array( 32, 32, 0, 32, 0, 0, 32, 0 )
 } ]
 26/z_index = 0
 27/name = "12_Kitchen_32x32.png 27"
-27/texture = ExtResource( 4 )
+27/texture = ExtResource( 6 )
 27/tex_offset = Vector2( 0, 0 )
 27/modulate = Color( 1, 1, 1, 1 )
 27/region = Rect2( 64, 160, 32, 32 )
@@ -808,7 +808,7 @@ points = PoolVector2Array( 32, 32, 0, 32, 0, 0, 32, 0 )
 } ]
 27/z_index = 0
 28/name = "12_Kitchen_32x32.png 28"
-28/texture = ExtResource( 4 )
+28/texture = ExtResource( 6 )
 28/tex_offset = Vector2( 0, 0 )
 28/modulate = Color( 1, 1, 1, 1 )
 28/region = Rect2( 64, 64, 32, 32 )
@@ -835,7 +835,7 @@ points = PoolVector2Array( 32, 32, 0, 32, 0, 0, 32, 0 )
 } ]
 28/z_index = 0
 29/name = "12_Kitchen_32x32.png 29"
-29/texture = ExtResource( 4 )
+29/texture = ExtResource( 6 )
 29/tex_offset = Vector2( 0, 0 )
 29/modulate = Color( 1, 1, 1, 1 )
 29/region = Rect2( 352, 1536, 32, 32 )
@@ -849,7 +849,7 @@ points = PoolVector2Array( 32, 32, 0, 32, 0, 0, 32, 0 )
 29/shapes = [  ]
 29/z_index = 0
 30/name = "12_Kitchen_32x32.png 30"
-30/texture = ExtResource( 4 )
+30/texture = ExtResource( 6 )
 30/tex_offset = Vector2( 0, 0 )
 30/modulate = Color( 1, 1, 1, 1 )
 30/region = Rect2( 288, 1536, 32, 32 )
@@ -863,7 +863,7 @@ points = PoolVector2Array( 32, 32, 0, 32, 0, 0, 32, 0 )
 30/shapes = [  ]
 30/z_index = 0
 31/name = "12_Kitchen_32x32.png 31"
-31/texture = ExtResource( 4 )
+31/texture = ExtResource( 6 )
 31/tex_offset = Vector2( 0, 0 )
 31/modulate = Color( 1, 1, 1, 1 )
 31/region = Rect2( 160, 1504, 32, 32 )
@@ -877,7 +877,7 @@ points = PoolVector2Array( 32, 32, 0, 32, 0, 0, 32, 0 )
 31/shapes = [  ]
 31/z_index = 0
 32/name = "12_Kitchen_32x32.png 32"
-32/texture = ExtResource( 4 )
+32/texture = ExtResource( 6 )
 32/tex_offset = Vector2( 0, 0 )
 32/modulate = Color( 1, 1, 1, 1 )
 32/region = Rect2( -2, 554, 68, 39 )
@@ -891,7 +891,7 @@ points = PoolVector2Array( 32, 32, 0, 32, 0, 0, 32, 0 )
 32/shapes = [  ]
 32/z_index = 0
 33/name = "12_Kitchen_32x32.png 33"
-33/texture = ExtResource( 4 )
+33/texture = ExtResource( 6 )
 33/tex_offset = Vector2( 0, 0 )
 33/modulate = Color( 1, 1, 1, 1 )
 33/region = Rect2( 58, 526, 42, 28 )
@@ -905,7 +905,7 @@ points = PoolVector2Array( 32, 32, 0, 32, 0, 0, 32, 0 )
 33/shapes = [  ]
 33/z_index = 0
 34/name = "12_Kitchen_32x32.png 34"
-34/texture = ExtResource( 4 )
+34/texture = ExtResource( 6 )
 34/tex_offset = Vector2( 0, 0 )
 34/modulate = Color( 1, 1, 1, 1 )
 34/region = Rect2( 318, 1160, 66, 20 )
@@ -919,7 +919,7 @@ points = PoolVector2Array( 32, 32, 0, 32, 0, 0, 32, 0 )
 34/shapes = [  ]
 34/z_index = 0
 
-[node name="Node2D" type="Node2D"]
+[node name="Level 1" type="Node2D"]
 
 [node name="Kitchen Background" type="TileMap" parent="."]
 tile_set = SubResource( 9 )
@@ -945,24 +945,24 @@ collision_mask = 0
 format = 1
 tile_data = PoolIntArray( -131078, -1610612722, 0, -131077, -1610612722, 0, -131076, -1610612722, 0, -131075, -1610612722, 0, -131074, -1610612722, 0, -131073, -1073741810, 0, -196608, -1073741810, 0, -196607, -1073741810, 0, -196606, -1073741810, 0, -196605, -1073741810, 0, -196604, -1610612722, 0, -196603, -1610612722, 0, -196602, -1610612722, 0, -196601, -1610612722, 0, -196600, -1610612722, 0, -196599, -1610612722, 0, -196598, -1610612722, 0, -196597, -1610612722, 0, -196596, -1610612722, 0, -196595, -1610612722, 0, -196594, -1610612722, 0, -196593, -1610612722, 0, -196592, -1610612722, 0, -196591, -1610612722, 0, -196590, -1610612722, 0, -196589, -1610612722, 0, -196588, -1610612722, 0, -196587, -1610612722, 0, -196586, -1610612722, 0, -196585, -1610612722, 0, -196584, -1610612722, 0, -65543, 14, 0, -65542, 26, 0, -131068, 14, 0, -131060, 14, 0, -131056, 14, 0, -131048, 14, 0, -7, 14, 0, -6, 26, 0, -2, 32, 0, -65520, 14, 0, -65518, 32, 0, -65512, 14, 0, 65529, 14, 0, 65530, 26, 0, 65533, 33, 0, 24, 14, 0, 131065, 14, 0, 131066, 26, 0, 131069, 0, 0, 65554, 22, 0, 65556, 13, 0, 65557, 16, 0, 65558, 16, 0, 65560, 14, 0, 196601, 14, 0, 196602, 26, 0, 196606, -1073741811, 0, 196607, -1073741811, 0, 131090, -1073741811, 0, 131091, -1073741811, 0, 131092, 13, 0, 131093, 13, 0, 131094, 13, 0, 131096, 14, 0, 262137, 14, 0, 262138, 25, 0, 262139, 25, 0, 262140, 25, 0, 262141, 25, 0, 262142, 25, 0, 262143, 25, 0, 196608, 25, 0, 196609, 25, 0, 196610, 25, 0, 196611, 25, 0, 196612, 25, 0, 196613, 25, 0, 196614, 25, 0, 196615, 25, 0, 196616, 25, 0, 196617, 25, 0, 196618, 25, 0, 196619, 25, 0, 196620, 25, 0, 196621, 25, 0, 196622, 25, 0, 196623, 25, 0, 196624, 14, 0, 196625, 1610612760, 0, 196626, 1610612760, 0, 196627, 1610612760, 0, 196628, 1610612760, 0, 196629, 1610612760, 0, 196630, 1610612760, 0, 196631, 1610612760, 0, 196632, 1610612760, 0, 327674, -1073741810, 0, 327675, -1073741810, 0, 327676, -1610612722, 0, 327677, -1610612722, 0, 327678, -1610612722, 0, 327679, -1610612722, 0, 262144, -1610612722, 0, 262145, -1610612722, 0, 262146, -1610612722, 0, 262147, -1610612722, 0, 262148, -1610612722, 0, 262149, -1610612722, 0, 262150, -1610612722, 0, 262151, -1610612722, 0, 262152, -1610612722, 0, 262153, -1610612722, 0, 262154, -1610612722, 0, 262155, -1610612722, 0, 262156, -1610612722, 0, 262157, -1610612722, 0, 262158, -1610612722, 0, 262159, -1610612722, 0, 262160, -1610612722, 0, 262161, -1610612722, 0, 262162, -1610612722, 0, 262163, -1610612722, 0, 262164, -1610612722, 0, 262165, -1610612722, 0, 262166, -1610612722, 0, 262167, -1610612722, 0, 262168, -1610612722, 0 )
 
-[node name="Bread Pickup" parent="." instance=ExtResource( 3 )]
+[node name="Bread Pickup" parent="." instance=ExtResource( 5 )]
 position = Vector2( -49, 57 )
 
-[node name="Lamb Sauce" parent="." instance=ExtResource( 6 )]
+[node name="Lamb Sauce" parent="." instance=ExtResource( 3 )]
 position = Vector2( -16, 49 )
 
-[node name="Door" parent="." instance=ExtResource( 7 )]
+[node name="Door" parent="." instance=ExtResource( 1 )]
 position = Vector2( 722, 48 )
 scale = Vector2( 0.75, 0.75 )
 
-[node name="Player" parent="." instance=ExtResource( 2 )]
+[node name="Player" parent="." instance=ExtResource( 4 )]
 position = Vector2( -143, 64 )
 
-[node name="Chef" parent="." instance=ExtResource( 1 )]
+[node name="Chef" parent="." instance=ExtResource( 2 )]
 position = Vector2( 527, 61 )
 
 [node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="."]
-stream = ExtResource( 5 )
+stream = ExtResource( 7 )
 volume_db = -37.542
 autoplay = true
 
