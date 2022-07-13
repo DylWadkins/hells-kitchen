@@ -911,6 +911,7 @@ points = PoolVector2Array( 32, 32, 0, 32, 0, 0, 32, 0 )
 34/z_index = 0
 
 [node name="Level 1" type="Node2D"]
+rotation = -0.00204071
 
 [node name="Kitchen Background" type="TileMap" parent="."]
 tile_set = SubResource( 9 )
