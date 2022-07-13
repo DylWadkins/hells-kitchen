@@ -945,7 +945,7 @@ position = Vector2( -16, 49 )
 [node name="Door" parent="." instance=ExtResource( 1 )]
 position = Vector2( 722, 48 )
 scale = Vector2( 0.75, 0.75 )
-NextScene = "\"res://Level 2.tscn\""
+NextScene = "res://Level 2.tscn"
 
 [node name="Player" parent="." instance=ExtResource( 4 )]
 position = Vector2( -143, 64 )

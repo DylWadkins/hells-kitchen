@@ -1,23 +1,19 @@
 extends Area2D
 
-
-# Declare member variables here. Examples:
-# var a = 2
-# var b = "text"
 func _on_Lamb_Sauce_body_entered(body):
-	print("Entered lamb sauce")
+	# Null check to ensure no null pointer errors. (Do these exist in GDScript? IDK)
 	if (body.lambSauce != null):
-		print("Changing lamb sauce variable on player")
+		# Set the lamb sauce variable on the player to true
 		body.lambSauce = true
-		$Slurp.play(0.4)
+		# Play the sound effect
+		$Slurp.play(0)
+		# Delete the collision
 		$Collision.queue_free()
+		# Make the sprite invisible
 		$Sprite.visible = false
+		# Start the timer
 		$Timer.start()
 
-# Called every frame. 'delta' is the elapsed time since the previous frame.
-#func _process(delta):
-#	pass
-
-
+# On timeout, delete the lamb sauce object
 func _on_Timer_timeout():
 	queue_free()

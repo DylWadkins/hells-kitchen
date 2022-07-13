@@ -947,6 +947,7 @@ tile_data = PoolIntArray( -917519, 25, 0, -917518, 25, 0, -917517, 25, 0, -91751
 [node name="Door" parent="." instance=ExtResource( 1 )]
 position = Vector2( 753, -47 )
 scale = Vector2( 0.75, 0.75 )
+NextScene = "res://Level 3.tscn"
 
 [node name="Player" parent="." instance=ExtResource( 3 )]
 position = Vector2( -423, -33 )
