@@ -1,0 +1,21 @@
+[remap]
+
+importer="wav"
+type="AudioStreamSample"
+path="res://.import/Let's Groove Chipmunk Version.wav-a4644c86698868e58528a50a09c7c402.sample"
+
+[deps]
+
+source_file="res://Assets/Win Screen/Music/Let's Groove Chipmunk Version.wav"
+dest_files=[ "res://.import/Let's Groove Chipmunk Version.wav-a4644c86698868e58528a50a09c7c402.sample" ]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=false
+edit/normalize=false
+edit/loop=false
+compress/mode=0
