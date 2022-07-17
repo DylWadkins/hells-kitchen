@@ -11,7 +11,6 @@ var last_direction = null
 
 # Gordon audio manager
 onready var audio_manager = $AudioManager
-onready var audio_manager2 = get_node("AudioManager")
 var sound_arr = []
 var rng = RandomNumberGenerator.new()
 
@@ -48,7 +47,7 @@ func _physics_process(delta):
 				state = States.PATROL
 				continue
 			#print("CHASE")
-			$AnimationPlayer.play("Walk")
+			$AnimationPlayer.play("Chase")
 			velocity = Vector2.ZERO
 			if player:
 					velocity.x = position.direction_to(player.position).x * SPEED 

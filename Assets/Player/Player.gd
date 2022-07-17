@@ -8,6 +8,7 @@ var velocity = Vector2(0,0)
 var lambSauce = false
 onready var state_machine = $AnimationTree.get("parameters/playback")
 onready var sprite = $Sprite
+onready var enemy = get_parent().get_node("Chef")
 
 # Constant Variables
 
@@ -55,8 +56,12 @@ func _physics_process(delta):
 				velocity.y = JUMPFORCE
 				state = States.AIR
 			move_and_fall()
-			
-			
+		
+	# Handles noise shader based on proximity to enemy
+	if (position.distance_to(enemy.position) < 300):
+		$NoiseShader.get_material().set_shader_param("power", (1 / position.distance_to(enemy.position)) - 1.0 / 300)
+	else:
+		$NoiseShader.get_material().set_shader_param("power", 0)
 # Function for moving and falling
 
 func move_and_fall():
