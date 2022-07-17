@@ -958,11 +958,11 @@ position = Vector2( 722, 48 )
 scale = Vector2( 0.75, 0.75 )
 NextScene = "res://Level 2.tscn"
 
-[node name="Chef" parent="." instance=ExtResource( 2 )]
-position = Vector2( 527, 61 )
-
 [node name="Player" parent="." instance=ExtResource( 4 )]
 position = Vector2( -159.13, 63.6754 )
+
+[node name="Chef" parent="." instance=ExtResource( 2 )]
+position = Vector2( 527, 61 )
 
 [node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="."]
 stream = ExtResource( 7 )
