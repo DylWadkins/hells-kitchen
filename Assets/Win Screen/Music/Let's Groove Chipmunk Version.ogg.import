@@ -1,0 +1,15 @@
+[remap]
+
+importer="ogg_vorbis"
+type="AudioStreamOGGVorbis"
+path="res://.import/Let's Groove Chipmunk Version.ogg-37533280801d2d2d16105d7447535bd0.oggstr"
+
+[deps]
+
+source_file="res://Assets/Win Screen/Music/Let's Groove Chipmunk Version.ogg"
+dest_files=[ "res://.import/Let's Groove Chipmunk Version.ogg-37533280801d2d2d16105d7447535bd0.oggstr" ]
+
+[params]
+
+loop=true
+loop_offset=0

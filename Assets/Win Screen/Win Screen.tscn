@@ -1,0 +1,92 @@
+[gd_scene load_steps=9 format=2]
+
+[ext_resource path="res://Assets/Win Screen/Images/325921116045211.png" type="Texture" id=1]
+[ext_resource path="res://Assets/Win Screen/Fonts/Insomnia.ttf" type="DynamicFontData" id=2]
+[ext_resource path="res://Assets/Win Screen/Fonts/TheDefiler.ttf" type="DynamicFontData" id=3]
+[ext_resource path="res://Assets/Game Over Screen/Images/fire.png" type="Texture" id=4]
+[ext_resource path="res://Assets/Win Screen/Win Screen.gd" type="Script" id=5]
+[ext_resource path="res://Assets/Win Screen/Music/Let's Groove Chipmunk Version.ogg" type="AudioStream" id=6]
+
+[sub_resource type="DynamicFont" id=1]
+font_data = ExtResource( 3 )
+
+[sub_resource type="DynamicFont" id=2]
+size = 10
+font_data = ExtResource( 2 )
+
+[node name="You Win" type="Control"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+rect_pivot_offset = Vector2( 23, -84 )
+script = ExtResource( 5 )
+
+[node name="ColorRect" type="ColorRect" parent="."]
+modulate = Color( 0.235294, 0.0745098, 0.0745098, 1 )
+show_behind_parent = true
+margin_right = 320.0
+margin_bottom = 180.0
+
+[node name="TextureRect2" type="TextureRect" parent="."]
+margin_top = 72.0
+margin_right = 166.0
+margin_bottom = 180.0
+texture = ExtResource( 4 )
+expand = true
+
+[node name="TextureRect3" type="TextureRect" parent="."]
+margin_left = 154.0
+margin_top = 72.0
+margin_right = 320.0
+margin_bottom = 180.0
+texture = ExtResource( 4 )
+expand = true
+flip_h = true
+
+[node name="TextureRect" type="TextureRect" parent="."]
+margin_left = 106.0
+margin_top = -4.0
+margin_right = 252.0
+margin_bottom = 180.0
+texture = ExtResource( 1 )
+expand = true
+
+[node name="Button" type="Button" parent="."]
+margin_left = 190.0
+margin_top = 157.0
+margin_right = 244.0
+margin_bottom = 180.0
+custom_colors/font_color = Color( 1, 0, 0, 1 )
+custom_colors/font_color_hover = Color( 0.352941, 0, 0, 1 )
+custom_colors/font_color_pressed = Color( 0.172549, 0, 0, 1 )
+custom_fonts/font = SubResource( 1 )
+text = "Main Menu"
+flat = true
+
+[node name="Label" type="Label" parent="."]
+margin_left = 2.0
+margin_top = 2.0
+margin_right = 119.0
+margin_bottom = 80.0
+custom_colors/font_color = Color( 0.819608, 0, 0, 1 )
+custom_fonts/font = SubResource( 2 )
+text = "You Stole All The
+Lamb Sauce 
+And Won!"
+
+[node name="Label2" type="Label" parent="."]
+margin_left = 214.0
+margin_top = 42.0
+margin_right = 331.0
+margin_bottom = 120.0
+custom_colors/font_color = Color( 0.819608, 0, 0, 1 )
+custom_fonts/font = SubResource( 2 )
+text = "Sosig for
+your troubles
+"
+
+[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="."]
+stream = ExtResource( 6 )
+volume_db = -11.16
+autoplay = true
+
+[connection signal="pressed" from="Button" to="." method="_on_Button_pressed"]
