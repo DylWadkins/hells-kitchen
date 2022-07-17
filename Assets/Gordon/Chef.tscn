@@ -209,7 +209,7 @@ collision_layer = 0
 position = Vector2( 1, 5 )
 shape = SubResource( 8 )
 
-[node name="Donkey" type="AudioStreamPlayer" parent="."]
+[node name="AudioManager" type="AudioStreamPlayer" parent="."]
 stream = ExtResource( 4 )
 volume_db = -29.424
 

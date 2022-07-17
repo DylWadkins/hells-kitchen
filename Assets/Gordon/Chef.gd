@@ -9,7 +9,11 @@ var player = null
 export var direction = -1 
 var last_direction = null
 
-
+# Gordon audio manager
+onready var audio_manager = $AudioManager
+onready var audio_manager2 = get_node("AudioManager")
+var sound_arr = []
+var rng = RandomNumberGenerator.new()
 
 # Constant Variables
 
@@ -17,6 +21,12 @@ const SPEED = 55
 const GRAVITY = 30
 const VIOLIN_CHANCE = 0.35
 
+func _ready():
+	# Preload sound bites
+	sound_arr.append(preload("res://Assets/Sounds/Donkey.ogg"))
+	sound_arr.append(preload("res://Assets/Sounds/Donut.ogg"))
+	sound_arr.append(preload("res://Assets/Sounds/RAW!.ogg"))
+	sound_arr.append(preload("res://Assets/Sounds/Yankee.ogg"))
 
 func _physics_process(delta):
 # switch statement for the two states
@@ -54,8 +64,11 @@ func _physics_process(delta):
 
 
 func _on_EyeSight_body_entered(body):
-	  player = body
-	  $Donkey.play()
+	player = body
+	audio_manager.stream = sound_arr[rng.randi_range(0, 3)]
+	audio_manager.play()
+	
+	  
 	  
 
 
@@ -66,12 +79,11 @@ func _on_EyeSight_body_exited(body):
 
 
 func _on_side_checker_body_entered(body):
-	 if body.get_collision_layer() == 1:
+	if body.get_collision_layer() == 1:
 		  $Kill.start()
 	 
 
 func _on_Timer_timeout():
-	$Lamb.play()
 	player.set_collision_layer_bit(0,false)
 	player.hurt(position.x)
 
