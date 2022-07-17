@@ -5,7 +5,7 @@
 [ext_resource path="res://Assets/Main Menu/Fonts/TheDefiler.ttf" type="DynamicFontData" id=3]
 [ext_resource path="res://Assets/Main Menu/images/gordon.png" type="Texture" id=4]
 [ext_resource path="res://Assets/Main Menu/images/point.webp" type="Texture" id=5]
-[ext_resource path="res://Assets/Main Menu/Music/Ohio Players - 'Fire' (1975).wav" type="AudioStream" id=6]
+[ext_resource path="res://Assets/Main Menu/Music/Fire.ogg" type="AudioStream" id=6]
 [ext_resource path="res://Assets/Main Menu/images/flames-png--clipart-best-28.png" type="Texture" id=7]
 
 [sub_resource type="DynamicFont" id=1]

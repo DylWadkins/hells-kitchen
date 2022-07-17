@@ -6,7 +6,7 @@
 [ext_resource path="res://Assets/Player/Player.tscn" type="PackedScene" id=4]
 [ext_resource path="res://Assets/Bread/Food.tscn" type="PackedScene" id=5]
 [ext_resource path="res://Assets/Textures/12_Kitchen_32x32.png" type="Texture" id=6]
-[ext_resource path="res://Assets/Sounds/Awaiting - Hell's Kitchen OST.wav" type="AudioStream" id=7]
+[ext_resource path="res://Assets/Sounds/Awaiting - Hell's Kitchen OST.ogg" type="AudioStream" id=7]
 
 [sub_resource type="TileSet" id=9]
 0/name = "12_Kitchen_32x32.png 0"
@@ -914,14 +914,11 @@ points = PoolVector2Array( 32, 32, 0, 32, 0, 0, 32, 0 )
 rotation = -0.00204071
 
 [node name="ColorRect" type="ColorRect" parent="."]
-margin_left = -645.0
-margin_top = -505.0
-margin_right = 1210.0
-margin_bottom = 656.0
+margin_left = -648.962
+margin_top = -509.325
+margin_right = 1206.04
+margin_bottom = 651.675
 color = Color( 0, 0, 0, 1 )
-__meta__ = {
-"_edit_use_anchors_": false
-}
 
 [node name="Kitchen Background" type="TileMap" parent="."]
 tile_set = SubResource( 9 )

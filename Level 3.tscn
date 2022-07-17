@@ -6,7 +6,7 @@
 [ext_resource path="res://Assets/Gordon/Chef.tscn" type="PackedScene" id=4]
 [ext_resource path="res://Assets/Lamb Sauce/Lamb Sauce.tscn" type="PackedScene" id=5]
 [ext_resource path="res://Assets/Door/Door.tscn" type="PackedScene" id=6]
-[ext_resource path="res://Assets/Sounds/Awaiting - Hell's Kitchen OST.wav" type="AudioStream" id=7]
+[ext_resource path="res://Assets/Sounds/Awaiting - Hell's Kitchen OST.ogg" type="AudioStream" id=7]
 
 [sub_resource type="TileSet" id=37]
 0/name = "12_Kitchen_32x32.png 0"
@@ -1046,6 +1046,13 @@ points = PoolVector2Array( 32, 32, 0, 32, 0, 0, 32, 0 )
 40/z_index = 0
 
 [node name="Level 3" type="Node2D"]
+
+[node name="ColorRect" type="ColorRect" parent="."]
+margin_left = -2519.0
+margin_top = -942.0
+margin_right = 1230.0
+margin_bottom = 367.0
+color = Color( 0, 0, 0, 1 )
 
 [node name="Kitchen Background" type="TileMap" parent="."]
 tile_set = SubResource( 37 )

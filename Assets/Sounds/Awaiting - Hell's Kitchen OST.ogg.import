@@ -1,0 +1,15 @@
+[remap]
+
+importer="ogg_vorbis"
+type="AudioStreamOGGVorbis"
+path="res://.import/Awaiting - Hell's Kitchen OST.ogg-6be04841b379ed489ba2f7e98a065527.oggstr"
+
+[deps]
+
+source_file="res://Assets/Sounds/Awaiting - Hell's Kitchen OST.ogg"
+dest_files=[ "res://.import/Awaiting - Hell's Kitchen OST.ogg-6be04841b379ed489ba2f7e98a065527.oggstr" ]
+
+[params]
+
+loop=true
+loop_offset=0

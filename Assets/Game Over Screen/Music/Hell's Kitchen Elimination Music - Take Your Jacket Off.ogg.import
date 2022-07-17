@@ -1,0 +1,15 @@
+[remap]
+
+importer="ogg_vorbis"
+type="AudioStreamOGGVorbis"
+path="res://.import/Hell's Kitchen Elimination Music - Take Your Jacket Off.ogg-a3a51707671a3eac599eae8b0455f2d4.oggstr"
+
+[deps]
+
+source_file="res://Assets/Game Over Screen/Music/Hell's Kitchen Elimination Music - Take Your Jacket Off.ogg"
+dest_files=[ "res://.import/Hell's Kitchen Elimination Music - Take Your Jacket Off.ogg-a3a51707671a3eac599eae8b0455f2d4.oggstr" ]
+
+[params]
+
+loop=true
+loop_offset=0

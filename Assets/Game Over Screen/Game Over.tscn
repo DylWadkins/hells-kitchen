@@ -5,7 +5,7 @@
 [ext_resource path="res://Assets/Game Over Screen/Fonts/InsomniaG.ttf" type="DynamicFontData" id=3]
 [ext_resource path="res://Assets/Game Over Screen/Images/118-1180554_based-on-gordon-ramsay-chef-gordon-ramsay.png" type="Texture" id=4]
 [ext_resource path="res://Assets/Game Over Screen/Images/fire.png" type="Texture" id=5]
-[ext_resource path="res://Assets/Game Over Screen/Music/Hell's Kitchen Elimination Music - Take Your Jacket Off.wav" type="AudioStream" id=6]
+[ext_resource path="res://Assets/Game Over Screen/Music/Hell's Kitchen Elimination Music - Take Your Jacket Off.ogg" type="AudioStream" id=6]
 
 [sub_resource type="DynamicFont" id=4]
 size = 22
