@@ -213,13 +213,15 @@ shape = SubResource( 8 )
 stream = ExtResource( 4 )
 volume_db = -29.424
 
-[node name="Lamb" type="AudioStreamPlayer" parent="."]
-stream = ExtResource( 5 )
-volume_db = -20.8
-
 [node name="Violin" type="AudioStreamPlayer" parent="."]
 stream = ExtResource( 6 )
 volume_db = -17.756
+
+[node name="Lamb" type="AudioStreamPlayer2D" parent="."]
+stream = ExtResource( 5 )
+volume_db = -13.697
+attenuation = 0.5
+bus = "Echo oh oh oh "
 
 [node name="Kill" type="Timer" parent="."]
 wait_time = 0.05

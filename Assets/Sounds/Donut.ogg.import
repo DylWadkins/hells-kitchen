@@ -1,0 +1,15 @@
+[remap]
+
+importer="ogg_vorbis"
+type="AudioStreamOGGVorbis"
+path="res://.import/Donut.ogg-37bfe5467d1b4bc7d0a88d529fc7a369.oggstr"
+
+[deps]
+
+source_file="res://Assets/Sounds/Donut.ogg"
+dest_files=[ "res://.import/Donut.ogg-37bfe5467d1b4bc7d0a88d529fc7a369.oggstr" ]
+
+[params]
+
+loop=true
+loop_offset=0

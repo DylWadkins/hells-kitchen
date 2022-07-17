@@ -1,4 +1,4 @@
-[gd_scene load_steps=35 format=2]
+[gd_scene load_steps=36 format=2]
 
 [ext_resource path="res://Assets/Door/Door.tscn" type="PackedScene" id=1]
 [ext_resource path="res://Assets/Gordon/Chef.tscn" type="PackedScene" id=2]
@@ -6,6 +6,7 @@
 [ext_resource path="res://Assets/Textures/12_Kitchen_32x32.png" type="Texture" id=4]
 [ext_resource path="res://Assets/Lamb Sauce/Lamb Sauce.tscn" type="PackedScene" id=5]
 [ext_resource path="res://Assets/Bread/Food.tscn" type="PackedScene" id=6]
+[ext_resource path="res://Assets/Sounds/Awaiting - Hell's Kitchen OST.wav" type="AudioStream" id=7]
 
 [sub_resource type="TileSet" id=37]
 0/name = "12_Kitchen_32x32.png 0"
@@ -961,5 +962,10 @@ position = Vector2( -1345, -374 )
 
 [node name="Bread Pickup" parent="." instance=ExtResource( 6 )]
 position = Vector2( 32, -120 )
+
+[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="."]
+stream = ExtResource( 7 )
+volume_db = -37.542
+autoplay = true
 
 [connection signal="body_entered" from="Lamb Sauce" to="Lamb Sauce" method="_on_Lamb_Sauce_body_entered"]

@@ -9,6 +9,8 @@ var player = null
 export var direction = -1 
 var last_direction = null
 
+
+
 # Constant Variables
 
 const SPEED = 55
@@ -78,3 +80,4 @@ func _on_VisibilityNotifier2D_screen_entered():
 	# percent chance to play violin sting
 	if randf() < VIOLIN_CHANCE:
 		$Violin.play()
+		
